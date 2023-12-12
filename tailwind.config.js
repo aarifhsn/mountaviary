@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],
-        'lato': ['Lato', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif'],
       },
       backgroundImage: {
         'home-bg': "url('/img/home_bg.png')",
