@@ -52,3 +52,22 @@ body {
   display: block !important;
   transition: all .5s;
 }
+
+.person_social_info ul li a {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  padding: 10px 15px;
+  box-shadow: 1px 1px 5px #D1D9E6, 0px 0px 5px #ffffff;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+.person_social_info ul li a:hover {
+  background: linear-gradient(145deg, #dff1fd, #dadada);
+}
+
+section#about {
+  position: relative;
+}
+section#about spanY.aboutID {
+  position: absolute;
+  font-size: 120px;
+}

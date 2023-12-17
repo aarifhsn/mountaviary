@@ -9,22 +9,23 @@
     <link rel="stylesheet" href="style.css">
     <title></title>
 </head>
-<body class="font-montserrat w-full mx-auto px-4 text-base transition-all">
+<body class="font-montserrat w-full mx-auto px-4 text-base transition">
     
     <header class="flex lg:hidden xl:hidden 2xl:hidden bg-white fixed top-0 left-0 min-h-[52px] z-50  w-full overflow-hidden">
         <div class="site_title w-1/2 ml-12 items-center flex">
             <h2><a href="#" class="font-montserrat font-bold">MountAviary</a></h2>
         </div>
-        <div class="top_menu fixed top-4 right-5 z-[15] transition-all duration-500 opened">
+        <div class="top_menu fixed top-4 right-5 z-[15] opened">
             <div class="navbar uppercase font-poppins font-bold text-sm text-right">
                 <div class="menu-toggle mb-2" id="mobile-menu">
                     <span class="cursor-pointer text-lg"><i class="fa-solid fa-bars"></i></span>
                 </div>
                 <ul class="nav-list text-right hidden p-6 pr-1 border border-slate-200 ">
-                  <li class="mb-5"><a href="#">Home</a></li>
-                  <li class="mb-5"><a href="#">About</a></li>
-                  <li class="mb-5"><a href="#">Services section</a></li>
-                  <li class="mb-5"><a href="#">Contact</a></li>
+                  <li class="mb-5"><a href="#home">Home</a></li>
+                  <li class="mb-5"><a href="#about">About</a></li>
+                  <li class="mb-5"><a href="#service">Services section</a></li>
+                  <li class="mb-5"><a href="#portfolio">Portfolio</a></li>
+                  <li class="mb-5"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -52,12 +53,11 @@
 
                         <div class="left_nav text-center uppercase font-poppins font-bold text-sm  ">
                             <ul>
-                                <li class="mt-4"><a href="">Home</a></li>
-                                <li class="mt-4"><a href="">About Me</a></li>
-                                <li class="mt-4"><a href="">What I Do</a></li>
-                                <li class="mt-4"><a href="">Resume</a></li>
-                                <li class="mt-4"><a href="">Portfolio</a></li>
-                                <li class="mt-4"><a href="">Testimonial</a></li>
+                                <li class="mt-4"><a href="#home">Home</a></li>
+                                <li class="mt-4"><a href="#about">About Me</a></li>
+                                <li class="mt-4"><a href="#service">What I Do</a></li>
+                                <li class="mt-4"><a href="#portfolio">Portfolio</a></li>
+                                <li class="mt-4"><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </div> <!-- end sidebar_info -->
@@ -65,7 +65,7 @@
 
                 <div class="body_content w-full lg:w-9/12 2xl:w-9/12 overflow-hidden relative">
 
-                    <section class="devs_top_info min-h-[90vh] mb-48 flex justify-center items-center 
+                    <section id="home" class="devs_top_info min-h-[90vh] mb-48 flex justify-center items-center 
                     text-start px-36 bg-home-bg bg-contain bg-center bg-no-repeat relative">
                         
                         <div class="devs_top_content">
@@ -74,9 +74,9 @@
                                 <a class="relative" href="">ARIF HASSAN</a>
                             </h2>
                             <p class="text-left text-md 2xl:text-2xl text-gray-500 my-6 font-medium ">I am a Web Developer making a dynamic goal to enrich the web project and working in WordPress, PHP, JavaScript, Lavarel and so on.  </P>
-                            <div class="person_social_info">
+                            <div class="person_social_info mt-8">
                                 <ul class="flex flex-row justify-start space-x-4 text-2xl text-slate-600 ">
-                                    <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
                                     <li><a href=""><i class="fa-brands fa-square-x-twitter"></i></a></li>
                                     <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
                                     <li><a href=""><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
@@ -89,7 +89,8 @@
                     
                     <!--ABOUT SECTION-->
 
-                    <section class="devs_about min-h-[100vh]  my-48">
+                    <section id="about" class="devs_about min-h-[100vh] my-48 transition-all">
+                        <span class="aboutID">about</span>
                         <div class="page_title my-4">
                             <h4 class="bg-slate-200 px-4 py-2 inline-block font-bold text-sm uppercase">about</h4>
                         </div>
@@ -187,21 +188,13 @@
                                        
                                     </div>
                                 </li>
-                                
-                                
                             </ul>
                         </div>
-
-
-
                     </section>
-
-
-
 
                     <!--PORTFOLIO SECTION-->
 
-                    <section class="portfolio_area min-h-[100vh] my-48">
+                    <section id="portfolio" class="portfolio_area min-h-[100vh] my-48">
                         <div class="portfolio_title my-4">
                             <h4 class="bg-slate-200 px-4 py-2 inline-block font-bold text-sm uppercase">Portfolio</h4>
                         </div>
@@ -272,7 +265,7 @@
 
                     </section>
 
-                    <section class="services_area min-h-[100vh]  my-48">
+                    <section id="service" class="services_area min-h-[100vh]  my-48">
                         <div class="services_title my-4">
                             <h4 class="bg-slate-200 px-4 py-2 inline-block font-bold text-sm uppercase">Services</h4>
                         </div>
@@ -329,7 +322,7 @@
                         </div>
                     </section>
 
-                    <section class="blog_posts  min-h-[100vh]  my-48">
+                    <section id="blog" class="blog_posts  min-h-[100vh]  my-48">
                         <div class="blog_area_title my-4">
                             <h4 class="bg-slate-200 px-4 py-2 inline-block font-bold text-sm uppercase">Blog</h4>
                         </div>
@@ -393,7 +386,7 @@
                     </section>
 
 
-                    <section class="contact_section min-h-[100vh]  my-48">
+                    <section id="contact" class="contact_section min-h-[100vh]  my-48">
                         <div class="map w-full h-full overflow-hidden">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14586.561258390391!2d91.1065283!3d23.937787600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1702454074289!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
