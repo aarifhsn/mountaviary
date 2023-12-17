@@ -1,6 +1,10 @@
-// const nav_menu_bar = document.querySelector("a.nav_menu_bar");
-// const nav_menu_ul = document.querySelector("ul.nav_menu_ul");
-
-// function myFunction() {
-//     document.getElementsByClassName("nav_menu_ul").classList.toggle("myStyle");
-//   }
+document.addEventListener('DOMContentLoaded', function () {
+    const mobileMenuButton = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+  
+    mobileMenuButton.addEventListener('click', function () {
+      navList.classList.toggle('show');
+      mobileMenuButton.classList.toggle('active');
+    });
+  });
+  
