@@ -1,452 +1,857 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./dist/output.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2aca301534.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
-</head>
-<body class="font-montserrat w-full mx-auto px-4 text-base transition">
-    
-    <header class="flex lg:hidden xl:hidden 2xl:hidden bg-white fixed top-0 left-0 min-h-[52px] z-50  w-full overflow-hidden">
-        <div class="site_title w-1/2 ml-12 items-center flex">
-            <h2><a href="#" class="font-montserrat font-bold">MountAviary</a></h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/2aca301534.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>MountAviary</title>
+  </head>
+  <body class="font-montserrat w-full mx-auto text-base transition">
+    <header
+      class="flex lg:hidden bg-white relative md:fixed top-0 left-0 min-h-[52px] z-50 w-full overflow-hidden"
+    >
+      <div class="site_title w-1/2 ml-12 items-center flex">
+        <h2><a href="#" class="font-montserrat font-bold">MountAviary</a></h2>
+      </div>
+      <div class="top_menu fixed top-4 right-5 z-[15] opened">
+        <div class="navbar uppercase font-poppins font-bold text-sm text-right">
+          <div class="menu-toggle mb-2" id="mobile-menu">
+            <span class="cursor-pointer text-lg"
+              ><i class="fa-solid fa-bars"></i
+            ></span>
+          </div>
+          <ul
+            class="nav-list text-right hidden p-6 pr-2 border border-slate-200"
+          >
+            <li class="mb-5 hover:text-slate-500"><a href="#home">Home</a></li>
+            <li class="mb-5 hover:text-slate-500">
+              <a href="#about">About</a>
+            </li>
+            <li class="mb-5 hover:text-slate-500">
+              <a href="#service">Services section</a>
+            </li>
+            <li class="mb-5 hover:text-slate-500">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="mb-5 hover:text-slate-500">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="top_menu fixed top-4 right-5 z-[15] opened">
-            <div class="navbar uppercase font-poppins font-bold text-sm text-right">
-                <div class="menu-toggle mb-2" id="mobile-menu">
-                    <span class="cursor-pointer text-lg"><i class="fa-solid fa-bars"></i></span>
-                </div>
-                <ul class="nav-list text-right hidden p-6 pr-1 border border-slate-200 ">
-                  <li class="mb-5"><a href="#home">Home</a></li>
-                  <li class="mb-5"><a href="#about">About</a></li>
-                  <li class="mb-5"><a href="#service">Services section</a></li>
-                  <li class="mb-5"><a href="#portfolio">Portfolio</a></li>
-                  <li class="mb-5"><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+      </div>
     </header>
-    
 
-    <div class="mount_body font-montserrat bg-slate-50 pt-12">
-        
-        <div class="container mx-auto px-5 relative overflow-hidden">
+    <div class="mount_body font-montserrat bg-slate-50">
+      <div class="container px-6 xl:p-0 mx-auto relative overflow-hidden">
+        <div class="site_content flex flex-row-reverse relative">
+          <div
+            class="sidebar_content hidden lg:block 2xl:block flex-auto h-full overflow-hidden overflow-y-auto z-[999] top-0 left-0 fixed my-8 border-r-2 w-3/12"
+          >
+            <!-- <div class="border-t-4 border-black border-solid"></div> -->
+            <div class="sidebar_info mx-auto w-2/3">
+              <div class="person_info">
+                <div class="persons_photo flex items-center justify-center">
+                  <img
+                    class="rounded border-1 border-slate-300 h-40 w-48"
+                    src="img/profile.webp"
+                    alt=""
+                  />
+                </div>
+                <h3
+                  class="person_name text-left xl:text-center text-2xl font-bold my-4 font-poppins"
+                >
+                  <a href="#"
+                    >Mount<span class="text-slate-500">A</span>viary</a
+                  >
+                </h3>
+              </div>
+              <!-- end person_info -->
 
-            <div class="site_content flex flex-row-reverse relative">
+              <div
+                class="left_nav text-left uppercase font-poppins font-bold text-sm text-slate-500 mt-8 pl-0 xl:pl-10"
+              >
+                <ul>
+                  <li class="mt-4 hover:text-slate-800 active:text-slate-800">
+                    <a href="#home">Home</a>
+                  </li>
+                  <li class="mt-4 hover:text-slate-800 active:text-slate-800">
+                    <a href="#about">About Me</a>
+                  </li>
+                  <li class="mt-4 hover:text-slate-800 active:text-slate-800">
+                    <a href="#service">What I Do</a>
+                  </li>
+                  <li class="mt-4 hover:text-slate-800 active:text-slate-800">
+                    <a href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="mt-4 hover:text-slate-800 active:text-slate-800">
+                    <a href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- end sidebar_info -->
+          </div>
+          <!--end sidebar_content-->
 
-                <div class="sidebar_content hidden lg:block 2xl:block  flex-auto h-full overflow-hidden overflow-y-auto z-[999]  top-4 left-0 fixed my-8 border-r-2 p-4 w-3/12">
-                    <!-- <div class="border-t-4 border-black border-solid"></div> -->
-                    <div class="sidebar_info  ">
-                        <div class="person_info">
-                            <div class="persons_photo flex items-center justify-center">
-                                <img class="rounded-full border-8 border-slate-300 " src="img/profile.webp" height="180px" width=" 180px" alt="">
-                            </div>
-                            <h3 class="person_name text-center text-2xl font-bold my-4 font-montserrat">
-                                
-                                <a href="#">MountAviary</a>
-                            </h3>
-                        </div> <!-- end person_info -->
-
-                        <div class="left_nav text-center uppercase font-poppins font-bold text-sm  ">
-                            <ul>
-                                <li class="mt-4"><a href="#home">Home</a></li>
-                                <li class="mt-4"><a href="#about">About Me</a></li>
-                                <li class="mt-4"><a href="#service">What I Do</a></li>
-                                <li class="mt-4"><a href="#portfolio">Portfolio</a></li>
-                                <li class="mt-4"><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div> <!-- end sidebar_info -->
-                </div> <!--end sidebar_content-->
-
-                <div class="body_content w-full lg:w-9/12 2xl:w-9/12 overflow-hidden relative">
-
-                    <section id="home" class="devs_top_info min-h-[90vh] mb-48 flex justify-center items-center 
-                    text-start px-36 bg-home-bg bg-contain bg-center bg-no-repeat relative">
-                        
-                        <div class="devs_top_content">
-                            <h2 class="text-5xl 2xl:text-8xl text-slate-950 font-extrabold capitalize">
-                                <span class="font-extrabold text-slate-200 absolute -mt-6 2xl:-mt-14 left-10 ">HELLO, I'M..</span>
-                                <a class="relative" href="">ARIF HASSAN</a>
-                            </h2>
-                            <p class="text-left text-md 2xl:text-2xl text-gray-500 my-6 font-medium ">I am a Web Developer making a dynamic goal to enrich the web project and working in WordPress, PHP, JavaScript, Lavarel and so on.  </P>
-                            <div class="person_social_info mt-8">
-                                <ul class="flex flex-row justify-start space-x-4 text-2xl text-slate-600 ">
-                                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-square-x-twitter"></i></a></li>
-                                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-                                    <li><a href=""><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- <span class="section_border absolute content-[''] w-10 h-1 bottom-0 left-0 bg-gray-600"
+          <div
+            class="body_content w-full lg:w-9/12 2xl:w-9/12 overflow-hidden relative"
+          >
+            <section
+              id="home"
+              class="devs_top_info min-h-screen md:min-h-[100vh] mb-24 lg:mb-48 flex justify-center items-center text-start px-4 lg:px-16 xl:px-36 py-10 md:py-0 bg-home-bg bg-contain bg-center bg-no-repeat relative"
+            >
+              <div class="devs_top_content">
+                <h2
+                  class="text-3xl md:text-5xl 2xl:text-8xl text-slate-950 font-extrabold capitalize"
+                >
+                  <span
+                    class="font-extrabold text-slate-200 absolute -mt-2 md:-mt-6 2xl:-mt-14 left-0 lg:left-10 md:left-0"
+                    >HELLO, I'M..</span
+                  >
+                  <a class="relative" href="">ARIF HASSAN</a>
+                </h2>
+                <p
+                  class="text-left text-sm 2xl:text-2xl text-gray-500 my-3 md:my-6 font-medium leading-6"
+                >
+                  I am a Web Developer making a dynamic goal to enrich the web
+                  project and working in WordPress, PHP, JavaScript, Lavarel and
+                  so on.
+                </p>
+                <div class="person_social_info mt-8">
+                  <div class="cont_marge flex my-8">
+                    <h3 class="hello">
+                      <a
+                        class="p-4 font-bold border hover:border-slate-400 border-slate-200 border-solid relative"
+                        href="#contact"
+                        >Say Hello
+                      </a>
+                    </h3>
+                    <h3 class="my_work">
+                      <a class="px-7 py-4 font-bold" href="#portfolio"
+                        >My Work
+                        <span class="ml-2 -rotate-45 absolute text-xs"
+                          ><i class="fa-solid fa-arrow-right"></i
+                        ></span>
+                      </a>
+                    </h3>
+                  </div>
+                  <!-- <span class="font-bold capitalize mb-2 block text-sm text-slate-500">Find Me in-</span> -->
+                  <ul
+                    class="flex flex-row justify-start space-x-4 text-lg text-slate-600"
+                  >
+                    <li>
+                      <a
+                        class="px-2 md:px-3 py-1 md:py-1.5 rounded border border-slate-200 hover:border-slate-400 border-solid"
+                        href=""
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        class="px-2 md:px-3 py-1 md:py-1.5 rounded border border-slate-200 hover:border-slate-400 border-solid"
+                        href=""
+                        ><i class="fa-brands fa-x-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        class="px-2 md:px-3 py-1 md:py-1.5 rounded border border-slate-200 hover:border-slate-400 border-solid"
+                        href=""
+                        ><i class="fa-brands fa-linkedin-in"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        class="px-2 md:px-3 py-1 md:py-1.5 rounded border border-slate-200 hover:border-slate-400 border-solid"
+                        href=""
+                        ><i class="fa-regular fa-envelope"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <span class="section_border absolute content-[''] w-10 h-1 bottom-0 left-0 bg-gray-600"
                           ></span> -->
-                    </section> <!--end devs_top_info-->
-                    
-                    <!--ABOUT SECTION-->
+            </section>
+            <!--end devs_top_info-->
 
-                    <section id="about" class="devs_about min-h-[100vh] my-48 transition-all">
-                        <span class="aboutID">about</span>
-                        <div class="page_title my-4">
-                            <h4 class="bg-slate-200 px-4 py-2 inline-block font-bold text-sm uppercase">about</h4>
-                        </div>
-                        <div class="about_title mt-4 mb-6">
-                            <h2 class="text-4xl font-bold capitalize ">About Me</h2>
-                        </div>
-                        
-                        <div class="about_photo">
-                            <img src="img/persons_id.jpg" class="h-auto w-full" alt="">
-                        </div>
-                        <div class="about_info my-4">
-                            <h3 class="font-bold text-2xl my-2"><a href="">Arif Hassan</a></h3>
-                            <p class="designation text-sm text-slate-500 ">Web Developer</p>
+            <!--ABOUT SECTION-->
 
-                            <div class="about_content my-8 border-t-2 border-slate-300 py-7 ">
-                                
-                                <p class="text-slate-600 text-sm font-medium leading-7 mt-2">Hi, my name is Arif Hassan and I began using WordPress when it first began. I’ve spent most of my waking hours for the last ten years designing, 
-                                    programming and operating WordPress sites.
-                                <p/>
-                                <p class="text-slate-600 text-sm font-medium leading-7 mt-2">One of my specialties is taking an idea from scratch and creating a full-fledged platform. I go beyond to produce sites with a unique, outstanding, 
-                                    contemporary look-and-feel.
-                                <p/>
-                                <p class="text-slate-600 text-sm font-medium leading-7 mt-2">With extensive knowledge of web mechanics, I'm able to optimize 
-                                    complex integrations to require little-to-no maintenance while running on their own for years.
-                                </p>
-                               
-                                <div class="about_content_list  my-8 border-t-2 border-slate-300 p-9 pt-12 leading-8 text-sm">
-                                    <div class="left_list">
-                                        <ul class="columns-2 gap-x-20 lg:gap-x-12">
-                                            <li><span class="min-w-[100px] mr-2 inline-block font-bold text-sm">Birthday:</span>01.01.1992</li>
-                                            <li><span class="min-w-[100px] mr-2 inline-block font-bold text-sm">Age:</span>32</li>
-                                            <li><span class="min-w-[100px] mr-2 inline-block font-bold text-sm">Address:</span>Bangladesh</li>
-                                            <li><span class="min-w-[100px] mr-2 inline-block font-bold text-sm">Email:</span>aarifhassan02@gmail.com</li>
-                                            <li><span class="min-w-[100px] mr-2 inline-block font-bold text-sm">Phone:</span>+880-1750-128167</li>
-                                    
-                                            <li><span class="min-w-[100px] mr-2 inline-block font-bold text-sm"">Nationality:</span>Bangladeshi</li>
-                                            <li><span class="min-w-[100px] mr-2 inline-block font-bold text-sm">Study: </span>Univercity of Dhaka</li>
-                                            <li><span class="min-w-[100px] mr-2 inline-block font-bold text-sm">Degree:</span>Masters</li>
-                                            <li><span class="min-w-[100px] mr-2 inline-block font-bold text-sm">Interest:</span>Playing, Reading</li>
-                                            <li><span class="min-w-[100px] mr-2 inline-block font-bold text-sm">Freelance:</span>Available</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <section
+              id="about"
+              class="devs_about min-h-[100vh] mb-24 lg:mb-48 transition-all"
+            >
+              <div class="page_title my-4">
+                <h4
+                  class="bg-slate-200 px-4 py-2 inline-block font-bold text-sm uppercase"
+                >
+                  about
+                </h4>
+              </div>
+              <div class="about_title mt-4 mb-6">
+                <h2 class="text-4xl font-bold capitalize">About Me</h2>
+              </div>
 
-                        <div class="knoweledge_section bg-white p-9 font-poppins">
-                            <ul class="grid grid-cols-2 gap-6">
-                                <li>
-                                    <div class="education_list flex gap-12 my-2">
-                                        <div class="education_subject flex-none">
-                                            <h3 class="font-semibold ">M.B.A</h3>
-                                            <span class="text-sm text-slate-500">University of Dhaka</span>
-                                        </div>
-                                        <div class="year text-end bg-slate-50 text-slate-400 font-semibold py-2 px-8 rounded-sm flex-initial"><span>2015-16</span></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="education_list flex gap-12 my-2">
-                                        <div class="education_subject flex-none">
-                                            <h3 class="font-semibold ">M.S.S</h3>
-                                            <span class="text-sm text-slate-500">Dhaka College</span>
-                                        </div>
-                                        <div class="year bg-slate-50 block text-slate-400 font-semibold py-2 px-8 rounded-sm  flex-initial"><span>2009-14</span></div>
-                                       
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="education_list flex gap-12 my-2">
-                                        <div class="education_subject flex-none">
-                                            <h3 class="font-semibold ">B.S.S.</h3>
-                                            <span class="text-sm text-slate-500">Brahmabaria Govt. College</span>
-                                        </div>
-                                        <div class="year bg-slate-50 block text-slate-400 font-semibold py-2 px-8 rounded-sm  flex-initial"><span>2009-13</span></div>
-                                       
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="education_list flex gap-12 my-2">
-                                        <div class="education_subject flex-none">
-                                            <h3 class="font-semibold ">H.S.C</h3>
-                                            <span class="text-sm text-slate-500">Brahmabaria Govt. College</span>
-                                        </div>
-                                        <div class="year bg-slate-50 block text-slate-400 font-semibold py-2 px-8 rounded-sm  flex-initial"><span>2006-07</span></div>
-                                       
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="education_list flex gap-12 my-2">
-                                        <div class="education_subject flex-none">
-                                            <h3 class="font-semibold ">S.S.C.</h3>
-                                            <span class="text-sm text-slate-500">Annada Govt. High School </span>
-                                        </div>
-                                        <div class="year bg-slate-50 inline-block text-slate-400 font-semibold py-2 px-8 rounded-sm  flex-initial"><span>2004-05</span></div>
-                                       
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
+              <div class="about_photo">
+                <img src="img/persons_id.jpg" class="h-auto w-full" alt="" />
+              </div>
+              <div class="about_info my-4">
+                <h3 class="font-bold text-2xl my-2">
+                  <a href="">Arif Hassan</a>
+                </h3>
+                <p class="designation text-sm text-slate-500">Web Developer</p>
 
-                    <!--PORTFOLIO SECTION-->
+                <div
+                  class="about_content my-4 md:my-8 py-3 md:py-7 border-t-2 border-slate-300"
+                >
+                  <p class="text-slate-600 text-sm font-medium leading-7 mt-2">
+                    Hi, my name is Arif Hassan and I began using WordPress when
+                    it first began. I’ve spent most of my waking hours for the
+                    last ten years designing, programming and operating
+                    WordPress sites.
+                  </p>
+                  <p class="text-slate-600 text-sm font-medium leading-7 mt-2">
+                    One of my specialties is taking an idea from scratch and
+                    creating a full-fledged platform. I go beyond to produce
+                    sites with a unique, outstanding, contemporary
+                    look-and-feel.
+                  </p>
+                  <p class="text-slate-600 text-sm font-medium leading-7 mt-2">
+                    With extensive knowledge of web mechanics, I'm able to
+                    optimize complex integrations to require little-to-no
+                    maintenance while running on their own for years.
+                  </p>
 
-                    <section id="portfolio" class="portfolio_area min-h-[100vh] my-48">
-                        <div class="portfolio_title my-4">
-                            <h4 class="bg-slate-200 px-4 py-2 inline-block font-bold text-sm uppercase">Portfolio</h4>
-                        </div>
-                        <div class="about_content mt-4 mb-6">
-                            <h2 class="text-4xl font-bold capitalize">Portfolio</h2>
-                            <h5 class="text-sm leading-8 text-slate-500">A few recent design and coding projects</h5>
-                        </div>
+                  <div
+                    class="about_content_list mt-8 border-t-2 border-slate-300 p-0 sm:p-1 md:p-9 pt-12 leading-8 text-sm"
+                  >
+                    <div class="left_list mt-8 md:mt-0">
+                      <ul
+                        class="columns-1 sm:columns-2 gap-0 sm:gap-x-6 md:gap-x-12"
+                      >
+                        <li>
+                          <span
+                            class="min-w-[100px] mr-2 inline-block font-bold"
+                            >Birthday:</span
+                          ><span class="text-slate-500">01.01.1992</span>
+                        </li>
+                        <li>
+                          <span
+                            class="min-w-[100px] mr-2 inline-block font-bold"
+                            >Age:</span
+                          ><span class="text-slate-500">32</span>
+                        </li>
+                        <li>
+                          <span
+                            class="min-w-[100px] mr-2 inline-block font-bold"
+                            >Address:</span
+                          ><span class="text-slate-500"
+                            >Brahmanbaria, Bangladesh</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            class="min-w-[100px] mr-2 inline-block font-bold"
+                            >Email:</span
+                          ><span class="text-slate-500"
+                            >aarifhassan02@gmail.com</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            class="min-w-[100px] mr-2 inline-block font-bold"
+                            >Phone:</span
+                          ><span class="text-slate-500">+880-1750-128167</span>
+                        </li>
 
-                        <div class="portfolio_page grid gap-4 lg:grid-cols-3 md:grid-cols-2">
+                        <li>
+                          <span
+                            class="min-w-[100px] mr-2 inline-block font-bold"
+                            >Nationality:</span
+                          ><span class="text-slate-500">Bangladeshi</span>
+                        </li>
+                        <li>
+                          <span
+                            class="min-w-[100px] mr-2 inline-block font-bold"
+                            >Study: </span
+                          ><span class="text-slate-500"
+                            >Univercity of Dhaka</span
+                          >
+                        </li>
+                        <li>
+                          <span
+                            class="min-w-[100px] mr-2 inline-block font-bold"
+                            >Degree:</span
+                          ><span class="text-slate-500">Masters</span>
+                        </li>
+                        <li>
+                          <span
+                            class="min-w-[100px] mr-2 inline-block font-bold"
+                            >Interest:</span
+                          ><span class="text-slate-500">Playing, Reading</span>
+                        </li>
+                        <li>
+                          <span
+                            class="min-w-[100px] mr-2 inline-block font-bold"
+                            >Freelance:</span
+                          ><span class="text-slate-500">Available</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-                            <div class="single_port relative">
-                                <img class="relative" src="img/project-1.jpg" alt="">
-                                <div class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-50 bg-lime-600 justify-center items-center cursor-pointer transition ">
-                                    <div class="text-slate-50 font-bold"><a href="">Hello World</a></div>
-                                </div>
-                            </div>
+              <div
+                class="knoweledge_section bg-white py-6 px-2 md:p-9 font-poppins"
+              >
+                <ul class="grid grid-cols-2 gap-6 sm:gap-12">
+                  <li>
+                    <div class="education_list flex gap-8 my-2">
+                      <div class="education_subject w-2/3">
+                        <h3 class="font-semibold">M.B.A</h3>
+                        <span class="text-sm text-slate-400"
+                          >University of Dhaka</span
+                        >
+                      </div>
+                      <div
+                        class="year w-1/3 text-center md:text-end bg-slate-50 text-slate-400 font-semibold p-2 rounded-sm"
+                      >
+                        <span>2015-16</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="education_list flex gap-8 my-2">
+                      <div class="education_subject w-2/3">
+                        <h3 class="font-semibold">M.S.S</h3>
+                        <span class="text-sm text-slate-400"
+                          >Dhaka College</span
+                        >
+                      </div>
+                      <div
+                        class="year w-1/3 text-center md:text-end bg-slate-50 text-slate-400 font-semibold p-2 rounded-sm"
+                      >
+                        <span>2013-14</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="education_list flex gap-8 my-2">
+                      <div class="education_subject w-2/3">
+                        <h3 class="font-semibold">B.S.S.</h3>
+                        <span class="text-sm text-slate-400"
+                          >Brahmabaria Govt. College</span
+                        >
+                      </div>
+                      <div
+                        class="year w-1/3 text-center md:text-end bg-slate-50 text-slate-400 font-semibold p-2 rounded-sm"
+                      >
+                        <span>2009-13</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="education_list flex gap-8 my-2">
+                      <div class="education_subject w-2/3">
+                        <h3 class="font-semibold">H.S.C</h3>
+                        <span class="text-sm text-slate-400"
+                          >Brahmabaria Govt. College</span
+                        >
+                      </div>
+                      <div
+                        class="year w-1/3 text-center md:text-end bg-slate-50 text-slate-400 font-semibold p-2 rounded-sm"
+                      >
+                        <span>2006-07</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="education_list flex gap-8 my-2">
+                      <div class="education_subject w-2/3">
+                        <h3 class="font-semibold">S.S.C.</h3>
+                        <span class="text-sm text-slate-400"
+                          >Annada Govt. High School
+                        </span>
+                      </div>
+                      <div
+                        class="year w-1/3 text-center md:text-end bg-slate-50 text-slate-400 font-semibold p-2 rounded-sm"
+                      >
+                        <span>2004-05</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
 
-                            <div class="single_port relative">
-                                <img src="img/project-2.jpg" alt="">
-                                <div class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-50 bg-lime-600 justify-center items-center cursor-pointer  transition ">
-                                    <div class="text-slate-50 font-bold"><a href="">Hello World</a></div>
-                                </div>
-                            </div>
+            <!--PORTFOLIO SECTION-->
 
-                            <div class="single_port relative">
-                                <img src="img/project-3.jpg" alt="">
-                                <div class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-50 bg-lime-600 justify-center items-center cursor-pointer  transition">
-                                    <div class="text-slate-50 font-bold"><a href="">Hello World</a></div>
-                                </div>
-                            </div>
+            <section
+              id="portfolio"
+              class="portfolio_area min-h-[100vh] my-24 lg:my-48"
+            >
+              <div class="portfolio_title my-4">
+                <h4
+                  class="bg-slate-200 px-4 py-2 inline-block font-bold text-sm uppercase"
+                >
+                  Portfolio
+                </h4>
+              </div>
+              <div class="about_content mt-4 mb-6">
+                <h2 class="text-4xl font-bold capitalize">Portfolio</h2>
+                <h5 class="text-sm leading-8 text-slate-500">
+                  A few recent design and coding projects
+                </h5>
+              </div>
 
-                            <div class="single_port relative">
-                                <img src="img/project-4.jpg" alt="">
-                                <div class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-50 bg-lime-600 justify-center items-center cursor-pointer  transition">
-                                    <div class="text-slate-50 font-bold"><a href="">Hello World</a></div>
-                                </div>
-                            </div>
+              <div
+                class="portfolio_page grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+              >
+                <div class="single_port relative">
+                  <img class="w-full" src="img/project-1.jpg" alt="" />
+                  <div
+                    class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-40 bg-lime-600 justify-center items-center cursor-pointer transition"
+                  >
+                    <div class="text-slate-50 font-bold">
+                      <a href="">Hello World</a>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="single_port relative">
-                                <img src="img/project-5.jpg" alt="">
-                                <div class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-50 bg-lime-600 justify-center items-center cursor-pointer  transition ">
-                                    <div class="text-slate-50 font-bold"><a href="">Hello World</a></div>
-                                </div>
-                            </div>
+                <div class="single_port relative">
+                  <img class="w-full" src="img/project-2.jpg" alt="" />
+                  <div
+                    class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-40 bg-lime-600 justify-center items-center cursor-pointer transition"
+                  >
+                    <div class="text-slate-50 font-bold">
+                      <a href="">Hello World</a>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="single_port relative">
-                                <img src="img/project-6.jpg" alt="">
-                                <div class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-50 bg-lime-600 justify-center items-center cursor-pointer  transition">
-                                    <div class="text-slate-50 font-bold"><a href="">Hello World</a></div>
-                                </div>
-                            </div>
+                <div class="single_port relative">
+                  <img class="w-full" src="img/project-3.jpg" alt="" />
+                  <div
+                    class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-40 bg-lime-600 justify-center items-center cursor-pointer transition"
+                  >
+                    <div class="text-slate-50 font-bold">
+                      <a href="">Hello World</a>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="single_port relative">
-                                <img src="img/project-7.jpg" alt="">
-                                <div class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-50 bg-lime-600 justify-center items-center cursor-pointer  transition">
-                                    <div class="text-slate-50 font-bold"><a href="">Hello World</a></div>
-                                </div>
-                            </div>
+                <div class="single_port relative">
+                  <img class="w-full" src="img/project-4.jpg" alt="" />
+                  <div
+                    class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-40 bg-lime-600 justify-center items-center cursor-pointer transition"
+                  >
+                    <div class="text-slate-50 font-bold">
+                      <a href="">Hello World</a>
+                    </div>
+                  </div>
+                </div>
 
-                            <div class="single_port relative">
-                                <img src="img/project-8.jpg" alt="">
-                                <div class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-50 bg-lime-600 justify-center items-center cursor-pointer  transition">
-                                    <div class="text-slate-50 font-bold"><a href="">Hello World</a></div>
-                                </div>
-                            </div>
+                <div class="single_port relative">
+                  <img class="w-full" src="img/project-5.jpg" alt="" />
+                  <div
+                    class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-40 bg-lime-600 justify-center items-center cursor-pointer transition"
+                  >
+                    <div class="text-slate-50 font-bold">
+                      <a href="">Hello World</a>
+                    </div>
+                  </div>
+                </div>
 
-                        </div>
+                <div class="single_port relative">
+                  <img class="w-full" src="img/project-6.jpg" alt="" />
+                  <div
+                    class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-40 bg-lime-600 justify-center items-center cursor-pointer transition"
+                  >
+                    <div class="text-slate-50 font-bold">
+                      <a href="">Hello World</a>
+                    </div>
+                  </div>
+                </div>
 
-                    </section>
+                <div class="single_port relative">
+                  <img class="w-full" src="img/project-7.jpg" alt="" />
+                  <div
+                    class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-40 bg-lime-600 justify-center items-center cursor-pointer transition"
+                  >
+                    <div class="text-slate-50 font-bold">
+                      <a href="">Hello World</a>
+                    </div>
+                  </div>
+                </div>
 
-                    <section id="service" class="services_area min-h-[100vh]  my-48">
-                        <div class="services_title my-4">
-                            <h4 class="bg-slate-200 px-4 py-2 inline-block font-bold text-sm uppercase">Services</h4>
-                        </div>
-                        <div class="about_content mt-4 mb-6">
-                            <h2 class="text-4xl font-bold capitalize">What I can Support</h2>
-                        </div>
-                        <div class="services_page grid  gap-4 grid-cols-2">
-                            <div class="single_serve relative  mx-2 my-4 border-2 border-gray-100  hover:border-gray-200 transition-all rounded border-solid p-4">
-                                <span class="service_icon flex justify-center items-center left-0 relative text-center w-10 h-10  bg-slate-200 py-2 px-3 m-4 ml-0 rounded ">
-                                    <i class="fa-brands fa-wordpress"></i>
-                                </span>
-                                <h3 class="services_title text-xl my-4">Web Development</h3>
-                                <p class="services_content text-sm text-slate-500 font-normal leading-6 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas molestias beatae ut itaque et iure doloribus voluptates eaque, vitae nam deleniti maiores magni 
-                                    quibusdam corporis adipisci nostrum voluptatibus eveniet.
-                                </p>
-                                <a class="font-medium text-sm text-slate-700" href="#">Read More</a>
-                            </div>
-                            
-                 
-                            <div class="single_serve relative  mx-2 my-4 border-2 border-gray-100  hover:border-gray-200 transition-all rounded border-solid p-4">
-                                <span class="service_icon flex justify-center items-center left-0 relative text-center w-10 h-10  bg-slate-200 py-2 px-3 m-4 ml-0 rounded ">
-                                    <i class="fa-solid fa-check"></i>
-                                </span>
-                                <h3 class="services_title text-xl my-4">Web Development</h3>
-                                <p class="services_content text-sm text-slate-500 font-normal leading-6 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas molestias beatae ut itaque et iure doloribus voluptates eaque, vitae nam deleniti maiores magni 
-                                    quibusdam corporis adipisci nostrum voluptatibus eveniet.
-                                </p>
-                                <a class="font-medium text-sm text-slate-700" href="#">Read More</a>
-                            </div>
-                            
-                 
-                            <div class="single_serve relative  mx-2 my-4 border-2 border-gray-100  hover:border-gray-200 transition-all rounded border-solid p-4">
-                                <span class="service_icon flex justify-center items-center left-0 relative text-center w-10 h-10  bg-slate-200 py-2 px-3 m-4 ml-0 rounded">
-                                    <i class="fa-brands fa-github"></i>
-                                </span>
-                                <h3 class="services_title text-xl my-4">Web Development</h3>
-                                <p class="services_content text-sm text-slate-500 font-normal leading-6 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas molestias beatae ut itaque et iure doloribus voluptates eaque, vitae nam deleniti maiores magni 
-                                    quibusdam corporis adipisci nostrum voluptatibus eveniet.
-                                </p>
-                                <a class="font-medium text-sm text-slate-700" href="#">Read More</a>
-                            </div>
-                            
-                 
-                            <div class="single_serve relative  mx-2 my-4 border-2 border-gray-100   hover:border-gray-200 transition-all rounded border-solid p-4">
-                                <span class="service_icon flex justify-center items-center left-0 relative text-center w-10 h-10  bg-slate-200 py-2 px-3 m-4 ml-0 rounded">
-                                    <i class="fa-solid fa-bolt"></i>
-                                </span>
-                                <h3 class="services_title text-xl my-4">Web Development</h3>
-                                <p class="services_content text-sm text-slate-500 font-normal leading-6 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quas molestias beatae ut itaque et iure doloribus voluptates eaque, vitae nam deleniti maiores magni 
-                                    quibusdam corporis adipisci nostrum voluptatibus eveniet.
-                                </p>
-                                <a class="font-medium text-sm text-slate-700" href="#">Read More</a>
-                            </div>
-                        </div>
-                    </section>
+                <div class="single_port relative">
+                  <img class="w-full" src="img/project-8.jpg" alt="" />
+                  <div
+                    class="overlay absolute flex top-0 left-0 h-full w-full opacity-0 hover:opacity-100 z-40 bg-lime-600 justify-center items-center cursor-pointer transition"
+                  >
+                    <div class="text-slate-50 font-bold">
+                      <a href="">Hello World</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
 
-                    <section id="blog" class="blog_posts  min-h-[100vh]  my-48">
-                        <div class="blog_area_title my-4">
-                            <h4 class="bg-slate-200 px-4 py-2 inline-block font-bold text-sm uppercase">Blog</h4>
-                        </div>
-                        <div class="about_content mt-4 mb-6">
-                            <h2 class="text-4xl font-bold capitalize">Recent Web Topics</h2>
-                        </div>
+            <section
+              id="service"
+              class="services_area min-h-[100vh] my-24 lg:my-48"
+            >
+              <div class="services_title my-4">
+                <h4
+                  class="bg-slate-200 px-4 py-2 inline-block font-bold text-sm uppercase"
+                >
+                  Services
+                </h4>
+              </div>
+              <div class="about_content mt-4 mb-6">
+                <h2 class="text-4xl font-bold capitalize">
+                  What I can Support
+                </h2>
+              </div>
+              <div class="services_page grid gap-4 grid-cols-1 md:grid-cols-2">
+                <div
+                  class="single_serve group relative mx-2 my-4 border-2 border-gray-100 hover:border-gray-200 transition-all rounded border-solid p-4"
+                >
+                  <span
+                    class="service_icon flex justify-center items-center left-0 relative text-center w-10 h-10 bg-slate-200 py-2 px-3 m-4 ml-0 rounded group-hover:bg-slate-300 transition-all"
+                  >
+                    <i class="fa-brands fa-wordpress"></i>
+                  </span>
+                  <h3 class="services_title text-xl my-4">Web Development</h3>
+                  <p
+                    class="services_content text-sm text-slate-500 font-normal leading-6 mb-4"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Expedita quas molestias beatae ut itaque et iure doloribus
+                    voluptates eaque, vitae nam deleniti maiores magni quibusdam
+                    corporis adipisci nostrum voluptatibus eveniet.
+                  </p>
+                  <a class="font-medium text-sm text-slate-700" href="#"
+                    >Read More</a
+                  >
+                </div>
 
-                        <div class="blog_info_area grid  gap-4 grid-cols-2">
+                <div
+                  class="single_serve group relative mx-2 my-4 border-2 border-gray-100 hover:border-gray-200 transition-all rounded border-solid p-4"
+                >
+                  <span
+                    class="service_icon flex justify-center items-center left-0 relative text-center w-10 h-10 bg-slate-200 py-2 px-3 m-4 ml-0 rounded group-hover:bg-slate-300 transition-all"
+                  >
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <h3 class="services_title text-xl my-4">Web Development</h3>
+                  <p
+                    class="services_content text-sm text-slate-500 font-normal leading-6 mb-4"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Expedita quas molestias beatae ut itaque et iure doloribus
+                    voluptates eaque, vitae nam deleniti maiores magni quibusdam
+                    corporis adipisci nostrum voluptatibus eveniet.
+                  </p>
+                  <a class="font-medium text-sm text-slate-700" href="#"
+                    >Read More</a
+                  >
+                </div>
 
-                            <div class="single_blog bg-white shadow-sm mb-4">
-                                <img src="img/project-4.jpg" class="w-full h-auto " alt="">
-                                <div class="author_info flex items-center px-4 py-2 mt-2">
-                                    <img class="author_photo h-7 w-7 rounded-full" src="img/project-7.jpg" alt="">
-                                    <h4 class="author_name text-slate-500 mx-3 text-xs"><a href="">Arif Hassan</a></h4>
-                                    <h5 class="post_date text-slate-500 text-xs ">Dec 12, 2023</h5>
-                                </div>
-                                <div class="blog_content px-4 py-3">
-                                    <h4 class= "text-sm text-slate-700 mb-2 font-medium"><a href="#">Microsoft announces a five-year commitment to create a bigger opportunities..</a></h4>
-                                    <span class="font-medium text-xs text-slate-500"><a href="#">Read More ...</a></span>
-                                </div>
-                            </div>
-                            <div class="single_blog bg-white shadow-sm mb-4">
-                                <img src="img/project-1.jpg" class="w-full h-auto " alt="">
-                                <div class="author_info flex items-center px-4 py-2 mt-2">
-                                    <img class="author_photo h-7 w-7 rounded-full" src="img/project-7.jpg" alt="">
-                                    <h4 class="author_name text-slate-500 mx-3 text-xs"><a href="">Arif Hassan</a></h4>
-                                    <h5 class="post_date text-slate-500 text-xs ">Dec 12, 2023</h5>
-                                </div>
-                                <div class="blog_content px-4 py-3">
-                                    <h4 class= "text-sm text-slate-700 mb-2 font-medium"><a href="#">Microsoft announces a five-year commitment to create a bigger opportunities..</a></h4>
-                                    <span class="font-medium text-xs text-slate-500"><a href="#">Read More ...</a></span>
-                                </div>
-                            </div>
-                            <div class="single_blog bg-white shadow-sm mb-4">
-                                <img src="img/project-2.jpg" class="w-full h-auto " alt="">
-                                <div class="author_info flex items-center px-4 py-2 mt-2">
-                                    <img class="author_photo h-7 w-7 rounded-full" src="img/project-7.jpg" alt="">
-                                    <h4 class="author_name text-slate-500 mx-3 text-xs"><a href="">Arif Hassan</a></h4>
-                                    <h5 class="post_date text-slate-500 text-xs ">Dec 12, 2023</h5>
-                                </div>
-                                <div class="blog_content px-4 py-3">
-                                    <h4 class= "text-sm text-slate-700 mb-2  font-medium"><a href="#">Microsoft announces a five-year commitment to create a bigger opportunities..</a></h4>
-                                    <span class="font-medium text-xs text-slate-500"><a href="#">Read More ...</a></span>
-                                </div>
-                            </div>
-                            <div class="single_blog bg-white shadow-sm mb-4">
-                                <img src="img/project-3.jpg" class="w-full h-auto " alt="">
-                                <div class="author_info flex items-center px-4 py-2 mt-2">
-                                    <img class="author_photo h-7 w-7 rounded-full" src="img/project-7.jpg" alt="">
-                                    <h4 class="author_name text-slate-500 mx-3 text-xs"><a href="">Arif Hassan</a></h4>
-                                    <h5 class="post_date text-slate-500 text-xs ">Dec 12, 2023</h5>
-                                </div>
-                                <div class="blog_content px-4 py-3">
-                                    <h4 class= "text-sm text-slate-700 mb-2 font-medium"><a href="#">Microsoft4 announces a five-year commitment to create a bigger opportunities..</a></h4>
-                                    <span class="font-medium text-xs text-slate-500"><a href="#">Read More ...</a></span>
-                                </div>
-                            </div>
-                            
-                        </div>
-                      
-                    </section>
+                <div
+                  class="single_serve group relative mx-2 my-4 border-2 border-gray-100 hover:border-gray-200 transition-all rounded border-solid p-4"
+                >
+                  <span
+                    class="service_icon flex justify-center items-center left-0 relative text-center w-10 h-10 bg-slate-200 py-2 px-3 m-4 ml-0 rounded group-hover:bg-slate-300 transition-all"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </span>
+                  <h3 class="services_title text-xl my-4">Web Development</h3>
+                  <p
+                    class="services_content text-sm text-slate-500 font-normal leading-6 mb-4"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Expedita quas molestias beatae ut itaque et iure doloribus
+                    voluptates eaque, vitae nam deleniti maiores magni quibusdam
+                    corporis adipisci nostrum voluptatibus eveniet.
+                  </p>
+                  <a class="font-medium text-sm text-slate-700" href="#"
+                    >Read More</a
+                  >
+                </div>
 
+                <div
+                  class="single_serve group relative mx-2 my-4 border-2 border-gray-100 hover:border-gray-200 transition-all rounded border-solid p-4"
+                >
+                  <span
+                    class="service_icon flex justify-center items-center left-0 relative text-center w-10 h-10 bg-slate-200 py-2 px-3 m-4 ml-0 rounded group-hover:bg-slate-300 transition-all"
+                  >
+                    <i class="fa-solid fa-bolt"></i>
+                  </span>
+                  <h3 class="services_title text-xl my-4">Web Development</h3>
+                  <p
+                    class="services_content text-sm text-slate-500 font-normal leading-6 mb-4"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Expedita quas molestias beatae ut itaque et iure doloribus
+                    voluptates eaque, vitae nam deleniti maiores magni quibusdam
+                    corporis adipisci nostrum voluptatibus eveniet.
+                  </p>
+                  <a class="font-medium text-sm text-slate-700" href="#"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </section>
 
-                    <section id="contact" class="contact_section min-h-[100vh]  my-48">
-                        <div class="map w-full h-full overflow-hidden">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14586.561258390391!2d91.1065283!3d23.937787600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1702454074289!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+            <section id="blog" class="blog_posts min-h-[100vh] my-24 lg:my-48">
+              <div class="blog_area_title my-4">
+                <h4
+                  class="bg-slate-200 px-4 py-2 inline-block font-bold text-sm uppercase"
+                >
+                  Blog
+                </h4>
+              </div>
+              <div class="about_content mt-4 mb-6">
+                <h2 class="text-4xl font-bold capitalize">Recent Web Topics</h2>
+              </div>
 
-                        <div class="div contact_area flex sm:block my-8 py-9  font-poppins font-bold uppercase text-sm">
-                            <div class="contact_info w-5/12 sm:w-full overflow-hidden text-slate-800 ">
-                                <ul>
-                                    <li class="grid grid-cols-2 p-4 border-2 my-3 border-solid border-white">
-                                        <div class="text-slate-500">Phone:</div>
-                                        <div>+880-1750-128167</div>
-                                    </li>
-                                    <li class="grid grid-cols-2 p-4 border-2 my-3 border-solid border-white">
-                                        <div  class="text-slate-500"> Email:</div>
-                                        <div class="lowercase">aarifhassan02@gmail.com</div>
-                                    </li>
-                                    <li class="grid grid-cols-2 p-4 border-2 my-3 border-solid border-white">
-                                        <div c class="text-slate-500">Location:</div>
-                                        <div class="capitalize">Banasree, Dhaka, Bangladesh</div>
-                                    </li>
-                                    <li class="grid grid-cols-2 p-4 border-2 my-3 border-solid border-white">
-                                        <div  class="text-slate-500">Working:</div>
-                                        <div>Sun-Thu, 8AM-6PM</div>
-                                    </li>
-                                </ul>
-                            </div>
-    
-                            <div class="contact_form flex-grow w-1/2 sm:w-full overflow-hidden ml-8 sm:ml-0 sm:mt-12 sm:px-4 text-slate-500">
-                                <form action="" method="post">
-                                    <div class="my-3">
-                                        <label for="name" >Name:</label>
-                                        <input type="text" name="name" id="name" class="block w-full p-4 mt-2.5 rounded-sm ">
-                                    </div>
-                                    <div class="my-3">
-                                        <label for="email" >Email:</label>
-                                        <input type="text" name="email" id="email" class="block w-full p-4 mt-2.5 rounded-sm ">
-                                    </div>
-                                    <div class="my-3">
-                                        <label for="message" >Message</label>
-                                        <textarea type="text" name="message" id="message"  class="block w-full p-4 mt-2.5 rounded-sm "></textarea>
-                                    </div>
+              <div
+                class="blog_info_area grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+              >
+                <div class="single_blog bg-white shadow-sm mb-4 rounded-lg">
+                  <a class="" href=""
+                    ><img src="img/project-4.jpg" class="w-full h-auto" alt=""
+                  /></a>
+                  <div class="author_info flex items-center px-4 py-2 mt-2">
+                    <img
+                      class="author_photo h-7 w-7 rounded-full"
+                      src="img/project-7.jpg"
+                      alt=""
+                    />
+                    <h4 class="author_name text-slate-500 mx-3 text-xs">
+                      <a href="">Arif Hassan</a>
+                    </h4>
+                    <h5 class="post_date text-slate-500 text-xs">
+                      Dec 12, 2023
+                    </h5>
+                  </div>
+                  <div class="blog_content px-4 py-3">
+                    <h4 class="text-sm text-slate-700 mb-2 font-medium">
+                      <a href="#"
+                        >Microsoft announces a five-year commitment to create a
+                        bigger opportunities..</a
+                      >
+                    </h4>
+                    <span class="font-medium text-xs text-slate-500"
+                      ><a href="#">Read More ...</a></span
+                    >
+                  </div>
+                </div>
+                <div class="single_blog bg-white shadow-sm mb-4">
+                  <img src="img/project-1.jpg" class="w-full h-auto" alt="" />
+                  <div class="author_info flex items-center px-4 py-2 mt-2">
+                    <img
+                      class="author_photo h-7 w-7 rounded-full"
+                      src="img/project-7.jpg"
+                      alt=""
+                    />
+                    <h4 class="author_name text-slate-500 mx-3 text-xs">
+                      <a href="">Arif Hassan</a>
+                    </h4>
+                    <h5 class="post_date text-slate-500 text-xs">
+                      Dec 12, 2023
+                    </h5>
+                  </div>
+                  <div class="blog_content px-4 py-3">
+                    <h4 class="text-sm text-slate-700 mb-2 font-medium">
+                      <a href="#"
+                        >Microsoft announces a five-year commitment to create a
+                        bigger opportunities..</a
+                      >
+                    </h4>
+                    <span class="font-medium text-xs text-slate-500"
+                      ><a href="#">Read More ...</a></span
+                    >
+                  </div>
+                </div>
+                <div class="single_blog bg-white shadow-sm mb-4">
+                  <img src="img/project-2.jpg" class="w-full h-auto" alt="" />
+                  <div class="author_info flex items-center px-4 py-2 mt-2">
+                    <img
+                      class="author_photo h-7 w-7 rounded-full"
+                      src="img/project-7.jpg"
+                      alt=""
+                    />
+                    <h4 class="author_name text-slate-500 mx-3 text-xs">
+                      <a href="">Arif Hassan</a>
+                    </h4>
+                    <h5 class="post_date text-slate-500 text-xs">
+                      Dec 12, 2023
+                    </h5>
+                  </div>
+                  <div class="blog_content px-4 py-3">
+                    <h4 class="text-sm text-slate-700 mb-2 font-medium">
+                      <a href="#"
+                        >Microsoft announces a five-year commitment to create a
+                        bigger opportunities..</a
+                      >
+                    </h4>
+                    <span class="font-medium text-xs text-slate-500"
+                      ><a href="#">Read More ...</a></span
+                    >
+                  </div>
+                </div>
+                <div class="single_blog bg-white shadow-sm mb-4">
+                  <img src="img/project-3.jpg" class="w-full h-auto" alt="" />
+                  <div class="author_info flex items-center px-4 py-2 mt-2">
+                    <img
+                      class="author_photo h-7 w-7 rounded-full"
+                      src="img/project-7.jpg"
+                      alt=""
+                    />
+                    <h4 class="author_name text-slate-500 mx-3 text-xs">
+                      <a href="">Arif Hassan</a>
+                    </h4>
+                    <h5 class="post_date text-slate-500 text-xs">
+                      Dec 12, 2023
+                    </h5>
+                  </div>
+                  <div class="blog_content px-4 py-3">
+                    <h4 class="text-sm text-slate-700 mb-2 font-medium">
+                      <a href="#"
+                        >Microsoft4 announces a five-year commitment to create a
+                        bigger opportunities..</a
+                      >
+                    </h4>
+                    <span class="font-medium text-xs text-slate-500"
+                      ><a href="#">Read More ...</a></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </section>
 
-                                     <!-- Submit Button -->
-                                     <div class="my-3">
-                                        <button type="submit" class="rounded-sm bg-indigo-600 border-2 border-indigo-500 p-2 py-1 text-white hover:bg-indigo-800 hover:border-indigo-600 transition duration-500">Submit</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    
+            <section
+              id="contact"
+              class="contact_section min-h-[100vh] my-24 lg:my-48"
+            >
+              <div class="contact_area_title my-4">
+                <h4
+                  class="bg-slate-200 px-4 py-2 inline-block font-bold text-sm uppercase"
+                >
+                  Find Me here
+                </h4>
+              </div>
+              <div class="map w-full h-full overflow-hidden">
+                <iframe
+                  class="w-full"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14586.561258390391!2d91.1065283!3d23.937787600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1702454074289!5m2!1sen!2sbd"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
 
-                    </section>
+              <div
+                class="div contact_area flex sm:block my-8 py-9 font-poppins font-bold uppercase text-sm"
+              >
+                <div
+                  class="contact_info w-5/12 sm:w-full overflow-hidden text-slate-800"
+                >
+                  <ul>
+                    <li
+                      class="grid grid-cols-2 p-4 border-2 my-3 border-solid border-white"
+                    >
+                      <div class="text-slate-500">Phone:</div>
+                      <div>+880-1750-128167</div>
+                    </li>
+                    <li
+                      class="grid grid-cols-2 p-4 border-2 my-3 border-solid border-white"
+                    >
+                      <div class="text-slate-500">Email:</div>
+                      <div class="lowercase">aarifhassan02@gmail.com</div>
+                    </li>
+                    <li
+                      class="grid grid-cols-2 p-4 border-2 my-3 border-solid border-white"
+                    >
+                      <div class="text-slate-500">Location:</div>
+                      <div class="capitalize">Banasree, Dhaka, Bangladesh</div>
+                    </li>
+                    <li
+                      class="grid grid-cols-2 p-4 border-2 my-3 border-solid border-white"
+                    >
+                      <div class="text-slate-500">Working:</div>
+                      <div>Sun-Thu, 8AM-6PM</div>
+                    </li>
+                  </ul>
+                </div>
 
-                </div> <!--end body_content-->
+                <div
+                  class="contact_form flex-grow w-1/2 sm:w-full overflow-hidden ml-8 sm:ml-0 sm:mt-12 sm:px-4 text-slate-500"
+                >
+                  <form action="message.php" method="post">
+                    <div class="my-3">
+                      <label for="name">Name:</label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="block w-full p-4 mt-2.5 rounded-sm"
+                      />
+                    </div>
+                    <div class="my-3">
+                      <label for="email">Email:</label>
+                      <input
+                        type="text"
+                        name="email"
+                        id="email"
+                        class="block w-full p-4 mt-2.5 rounded-sm"
+                      />
+                    </div>
+                    <div class="my-3">
+                      <label for="message">Message</label>
+                      <textarea
+                        name="message"
+                        id="message"
+                        class="block w-full p-4 mt-2.5 rounded-sm"
+                      ></textarea>
+                    </div>
 
-            </div><!--end site_content-->
-
-        </div> <!-- end container-->
-
-    </div> <!--end mount body-->
+                    <!-- Submit Button -->
+                    <div class="my-3">
+                      <button
+                        type="submit"
+                        class="rounded-sm bg-indigo-600 border-2 border-indigo-500 p-2 py-1 text-white hover:bg-indigo-800 hover:border-indigo-600 transition duration-500"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!--end body_content-->
+        </div>
+        <!--end site_content-->
+      </div>
+      <!-- end container-->
+    </div>
+    <!--end mount body-->
 
     <script src="src/scripts.js"></script>
-</body>
+  </body>
 </html>
