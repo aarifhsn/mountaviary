@@ -51,10 +51,12 @@
     </header>
 
     <div class="mount_body font-montserrat bg-slate-50">
-      <div class="container px-6 xl:p-0 mx-auto relative overflow-hidden">
+      <div
+        class="container px-3 md:px-6 xl:p-0 mx-auto relative overflow-hidden"
+      >
         <div class="site_content flex flex-row-reverse relative">
           <div
-            class="sidebar_content hidden lg:block 2xl:block flex-auto h-full overflow-hidden overflow-y-auto z-[999] top-0 left-0 fixed my-8 border-r-2 w-3/12"
+            class="sidebar_content hidden lg:block 2xl:block flex-auto h-full overflow-hidden overflow-y-auto z-50 top-0 left-0 fixed my-8 border-r-2 w-3/12"
           >
             <!-- <div class="border-t-4 border-black border-solid"></div> -->
             <div class="sidebar_info mx-auto w-2/3">
@@ -127,16 +129,18 @@
                   so on.
                 </p>
                 <div class="person_social_info mt-8">
-                  <div class="cont_marge flex my-8">
+                  <div class="cont_marge flex my-8 text-slate-600">
                     <h3 class="hello">
                       <a
-                        class="p-4 font-bold border hover:border-slate-400 border-slate-200 border-solid relative"
+                        class="p-4 font-semibold border hover:border-slate-600 hover:text-slate-800 border-slate-300 border-solid relative"
                         href="#contact"
                         >Say Hello
                       </a>
                     </h3>
                     <h3 class="my_work">
-                      <a class="px-7 py-4 font-bold" href="#portfolio"
+                      <a
+                        class="px-7 py-4 font-semibold hover:text-slate-800"
+                        href="#portfolio"
                         >My Work
                         <span class="ml-2 -rotate-45 absolute text-xs"
                           ><i class="fa-solid fa-arrow-right"></i
@@ -198,20 +202,22 @@
                 </h4>
               </div>
               <div class="about_title mt-4 mb-6">
-                <h2 class="text-4xl font-bold capitalize">About Me</h2>
+                <h2 class="text-xl sm:text-4xl font-bold capitalize">
+                  About Me
+                </h2>
               </div>
 
               <div class="about_photo">
                 <img src="img/persons_id.jpg" class="h-auto w-full" alt="" />
               </div>
               <div class="about_info my-4">
-                <h3 class="font-bold text-2xl my-2">
+                <h3 class="font-bold text-xl sm:text-2xl my-2">
                   <a href="">Arif Hassan</a>
                 </h3>
                 <p class="designation text-sm text-slate-500">Web Developer</p>
 
                 <div
-                  class="about_content my-4 md:my-8 py-3 md:py-7 border-t-2 border-slate-300"
+                  class="about_content my-4 md:my-6 py-3 md:py-7 border-t-2 border-slate-300"
                 >
                   <p class="text-slate-600 text-sm font-medium leading-7 mt-2">
                     Hi, my name is Arif Hassan and I began using WordPress when
@@ -314,7 +320,7 @@
               <div
                 class="knoweledge_section bg-white py-6 px-2 md:p-9 font-poppins"
               >
-                <ul class="grid grid-cols-2 gap-6 sm:gap-12">
+                <ul class="grid grid-cols-2 gap-y-6 gap-x-6 sm:gap-x-12">
                   <li>
                     <div class="education_list flex gap-8 my-2">
                       <div class="education_subject w-2/3">
@@ -408,7 +414,9 @@
                 </h4>
               </div>
               <div class="about_content mt-4 mb-6">
-                <h2 class="text-4xl font-bold capitalize">Portfolio</h2>
+                <h2 class="text-xl sm:text-4xl font-bold capitalize">
+                  Portfolio
+                </h2>
                 <h5 class="text-sm leading-8 text-slate-500">
                   A few recent design and coding projects
                 </h5>
@@ -507,6 +515,7 @@
               </div>
             </section>
 
+            <!-- SERVICES SECTION  -->
             <section
               id="service"
               class="services_area min-h-[100vh] my-24 lg:my-48"
@@ -519,13 +528,13 @@
                 </h4>
               </div>
               <div class="about_content mt-4 mb-6">
-                <h2 class="text-4xl font-bold capitalize">
+                <h2 class="text-xl sm:text-4xl font-bold capitalize">
                   What I can Support
                 </h2>
               </div>
               <div class="services_page grid gap-4 grid-cols-1 md:grid-cols-2">
                 <div
-                  class="single_serve group relative mx-2 my-4 border-2 border-gray-100 hover:border-gray-200 transition-all rounded border-solid p-4"
+                  class="single_serve group relative mx-2 my-1 sm:my-4 border-2 border-gray-100 hover:border-gray-200 transition-all rounded border-solid p-4"
                 >
                   <span
                     class="service_icon flex justify-center items-center left-0 relative text-center w-10 h-10 bg-slate-200 py-2 px-3 m-4 ml-0 rounded group-hover:bg-slate-300 transition-all"
@@ -541,13 +550,15 @@
                     voluptates eaque, vitae nam deleniti maiores magni quibusdam
                     corporis adipisci nostrum voluptatibus eveniet.
                   </p>
-                  <a class="font-medium text-sm text-slate-700" href="#"
+                  <a
+                    class="font-medium text-sm text-slate-700 hover:text-slate-900"
+                    href="#"
                     >Read More</a
                   >
                 </div>
 
                 <div
-                  class="single_serve group relative mx-2 my-4 border-2 border-gray-100 hover:border-gray-200 transition-all rounded border-solid p-4"
+                  class="single_serve group relative mx-2 my-1 sm:my-4 border-2 border-gray-100 hover:border-gray-200 transition-all rounded border-solid p-4"
                 >
                   <span
                     class="service_icon flex justify-center items-center left-0 relative text-center w-10 h-10 bg-slate-200 py-2 px-3 m-4 ml-0 rounded group-hover:bg-slate-300 transition-all"
@@ -563,13 +574,15 @@
                     voluptates eaque, vitae nam deleniti maiores magni quibusdam
                     corporis adipisci nostrum voluptatibus eveniet.
                   </p>
-                  <a class="font-medium text-sm text-slate-700" href="#"
+                  <a
+                    class="font-medium text-sm text-slate-700 hover:text-slate-900"
+                    href="#"
                     >Read More</a
                   >
                 </div>
 
                 <div
-                  class="single_serve group relative mx-2 my-4 border-2 border-gray-100 hover:border-gray-200 transition-all rounded border-solid p-4"
+                  class="single_serve group relative mx-2 my-1 sm:my-4 border-2 border-gray-100 hover:border-gray-200 transition-all rounded border-solid p-4"
                 >
                   <span
                     class="service_icon flex justify-center items-center left-0 relative text-center w-10 h-10 bg-slate-200 py-2 px-3 m-4 ml-0 rounded group-hover:bg-slate-300 transition-all"
@@ -585,13 +598,15 @@
                     voluptates eaque, vitae nam deleniti maiores magni quibusdam
                     corporis adipisci nostrum voluptatibus eveniet.
                   </p>
-                  <a class="font-medium text-sm text-slate-700" href="#"
+                  <a
+                    class="font-medium text-sm text-slate-700 hover:text-slate-900"
+                    href="#"
                     >Read More</a
                   >
                 </div>
 
                 <div
-                  class="single_serve group relative mx-2 my-4 border-2 border-gray-100 hover:border-gray-200 transition-all rounded border-solid p-4"
+                  class="single_serve group relative mx-2 my-1 sm:my-4 border-2 border-gray-100 hover:border-gray-200 transition-all rounded border-solid p-4"
                 >
                   <span
                     class="service_icon flex justify-center items-center left-0 relative text-center w-10 h-10 bg-slate-200 py-2 px-3 m-4 ml-0 rounded group-hover:bg-slate-300 transition-all"
@@ -607,13 +622,16 @@
                     voluptates eaque, vitae nam deleniti maiores magni quibusdam
                     corporis adipisci nostrum voluptatibus eveniet.
                   </p>
-                  <a class="font-medium text-sm text-slate-700" href="#"
+                  <a
+                    class="font-medium text-sm text-slate-700 hover:text-slate-900"
+                    href="#"
                     >Read More</a
                   >
                 </div>
               </div>
             </section>
 
+            <!-- BLOG SECTION  -->
             <section id="blog" class="blog_posts min-h-[100vh] my-24 lg:my-48">
               <div class="blog_area_title my-4">
                 <h4
@@ -623,7 +641,9 @@
                 </h4>
               </div>
               <div class="about_content mt-4 mb-6">
-                <h2 class="text-4xl font-bold capitalize">Recent Web Topics</h2>
+                <h2 class="text-xl sm:text-4xl font-bold capitalize">
+                  Recent Web Topics
+                </h2>
               </div>
 
               <div
@@ -639,21 +659,26 @@
                       src="img/project-7.jpg"
                       alt=""
                     />
-                    <h4 class="author_name text-slate-500 mx-3 text-xs">
-                      <a href="">Arif Hassan</a>
+                    <h4
+                      class="author_name text-slate-500 hover:text-slate-900 mx-3 text-xs"
+                    >
+                      <a href="#">Arif Hassan</a>
                     </h4>
                     <h5 class="post_date text-slate-500 text-xs">
                       Dec 12, 2023
                     </h5>
                   </div>
                   <div class="blog_content px-4 py-3">
-                    <h4 class="text-sm text-slate-700 mb-2 font-medium">
+                    <h4
+                      class="text-sm text-slate-700 hover:text-slate-950 mb-2 font-medium"
+                    >
                       <a href="#"
                         >Microsoft announces a five-year commitment to create a
                         bigger opportunities..</a
                       >
                     </h4>
-                    <span class="font-medium text-xs text-slate-500"
+                    <span
+                      class="font-medium text-xs text-slate-500 hover:text-slate-900"
                       ><a href="#">Read More ...</a></span
                     >
                   </div>
@@ -666,7 +691,9 @@
                       src="img/project-7.jpg"
                       alt=""
                     />
-                    <h4 class="author_name text-slate-500 mx-3 text-xs">
+                    <h4
+                      class="author_name text-slate-500 hover:text-slate-900 mx-3 text-xs"
+                    >
                       <a href="">Arif Hassan</a>
                     </h4>
                     <h5 class="post_date text-slate-500 text-xs">
@@ -674,13 +701,16 @@
                     </h5>
                   </div>
                   <div class="blog_content px-4 py-3">
-                    <h4 class="text-sm text-slate-700 mb-2 font-medium">
+                    <h4
+                      class="text-sm text-slate-700 hover:text-slate-950 mb-2 font-medium"
+                    >
                       <a href="#"
                         >Microsoft announces a five-year commitment to create a
                         bigger opportunities..</a
                       >
                     </h4>
-                    <span class="font-medium text-xs text-slate-500"
+                    <span
+                      class="font-medium text-xs text-slate-500 hover:text-slate-900"
                       ><a href="#">Read More ...</a></span
                     >
                   </div>
@@ -693,7 +723,9 @@
                       src="img/project-7.jpg"
                       alt=""
                     />
-                    <h4 class="author_name text-slate-500 mx-3 text-xs">
+                    <h4
+                      class="author_name text-slate-500 hover:text-slate-900 mx-3 text-xs"
+                    >
                       <a href="">Arif Hassan</a>
                     </h4>
                     <h5 class="post_date text-slate-500 text-xs">
@@ -701,13 +733,16 @@
                     </h5>
                   </div>
                   <div class="blog_content px-4 py-3">
-                    <h4 class="text-sm text-slate-700 mb-2 font-medium">
+                    <h4
+                      class="text-sm text-slate-700 hover:text-slate-950 mb-2 font-medium"
+                    >
                       <a href="#"
                         >Microsoft announces a five-year commitment to create a
                         bigger opportunities..</a
                       >
                     </h4>
-                    <span class="font-medium text-xs text-slate-500"
+                    <span
+                      class="font-medium text-xs text-slate-500 hover:text-slate-900"
                       ><a href="#">Read More ...</a></span
                     >
                   </div>
@@ -720,7 +755,9 @@
                       src="img/project-7.jpg"
                       alt=""
                     />
-                    <h4 class="author_name text-slate-500 mx-3 text-xs">
+                    <h4
+                      class="author_name text-slate-500 hover:text-slate-900 mx-3 text-xs"
+                    >
                       <a href="">Arif Hassan</a>
                     </h4>
                     <h5 class="post_date text-slate-500 text-xs">
@@ -728,13 +765,16 @@
                     </h5>
                   </div>
                   <div class="blog_content px-4 py-3">
-                    <h4 class="text-sm text-slate-700 mb-2 font-medium">
-                      <a href="#"
+                    <h4
+                      class="text-sm text-slate-700 hover:text-slate-950 mb-2 font-medium"
+                    >
+                      <a class="block" href="#"
                         >Microsoft4 announces a five-year commitment to create a
                         bigger opportunities..</a
                       >
                     </h4>
-                    <span class="font-medium text-xs text-slate-500"
+                    <span
+                      class="font-medium text-xs text-slate-500 hover:text-slate-900"
                       ><a href="#">Read More ...</a></span
                     >
                   </div>
@@ -742,9 +782,11 @@
               </div>
             </section>
 
+            <!-- CONTACT SECTION -->
+
             <section
               id="contact"
-              class="contact_section min-h-[100vh] my-24 lg:my-48"
+              class="contact_section min-h-[100vh] my-10 md:my-20 lg:my-36"
             >
               <div class="contact_area_title my-4">
                 <h4
@@ -766,32 +808,32 @@
               </div>
 
               <div
-                class="div contact_area flex sm:block my-8 py-9 font-poppins font-bold uppercase text-sm"
+                class="contact_area block md:flex gap-8 my-8 py-9 px-8 md:px-0 font-poppins font-bold uppercase text-xs"
               >
                 <div
-                  class="contact_info w-5/12 sm:w-full overflow-hidden text-slate-800"
+                  class="contact_info w-full md:w-1/2 mb-20 md:mb-0 overflow-hidden text-slate-800"
                 >
                   <ul>
                     <li
-                      class="grid grid-cols-2 p-4 border-2 my-3 border-solid border-white"
+                      class="grid grid-cols-2 p-4 border border-slate-300 border-solid my-3"
                     >
                       <div class="text-slate-500">Phone:</div>
                       <div>+880-1750-128167</div>
                     </li>
                     <li
-                      class="grid grid-cols-2 p-4 border-2 my-3 border-solid border-white"
+                      class="grid grid-cols-2 p-4 border border-slate-300 border-solid my-3"
                     >
                       <div class="text-slate-500">Email:</div>
                       <div class="lowercase">aarifhassan02@gmail.com</div>
                     </li>
                     <li
-                      class="grid grid-cols-2 p-4 border-2 my-3 border-solid border-white"
+                      class="grid grid-cols-2 p-4 border border-slate-300 border-solid my-3"
                     >
                       <div class="text-slate-500">Location:</div>
                       <div class="capitalize">Banasree, Dhaka, Bangladesh</div>
                     </li>
                     <li
-                      class="grid grid-cols-2 p-4 border-2 my-3 border-solid border-white"
+                      class="grid grid-cols-2 p-4 my-3 border border-slate-300 border-solid"
                     >
                       <div class="text-slate-500">Working:</div>
                       <div>Sun-Thu, 8AM-6PM</div>
@@ -800,16 +842,16 @@
                 </div>
 
                 <div
-                  class="contact_form flex-grow w-1/2 sm:w-full overflow-hidden ml-8 sm:ml-0 sm:mt-12 sm:px-4 text-slate-500"
+                  class="contact_form w-full md:w-1/2 overflow-hidden ml-0 mr-0 -mt-6 px-0 text-slate-500"
                 >
                   <form action="message.php" method="post">
-                    <div class="my-3">
+                    <div class="my-0 md:my-3">
                       <label for="name">Name:</label>
                       <input
                         type="text"
                         name="name"
                         id="name"
-                        class="block w-full p-4 mt-2.5 rounded-sm"
+                        class="block w-full p-4 mt-2.5 rounded-sm border border-slate-400 border-solid"
                       />
                     </div>
                     <div class="my-3">
@@ -818,7 +860,7 @@
                         type="text"
                         name="email"
                         id="email"
-                        class="block w-full p-4 mt-2.5 rounded-sm"
+                        class="block w-full p-4 mt-2.5 rounded-sm border border-slate-400 border-solid"
                       />
                     </div>
                     <div class="my-3">
@@ -826,7 +868,7 @@
                       <textarea
                         name="message"
                         id="message"
-                        class="block w-full p-4 mt-2.5 rounded-sm"
+                        class="block w-full p-4 mt-2.5 rounded-sm border border-slate-400 border-solid"
                       ></textarea>
                     </div>
 
@@ -834,7 +876,7 @@
                     <div class="my-3">
                       <button
                         type="submit"
-                        class="rounded-sm bg-indigo-600 border-2 border-indigo-500 p-2 py-1 text-white hover:bg-indigo-800 hover:border-indigo-600 transition duration-500"
+                        class="rounded-sm bg-slate-800 border-2 border-slate-400 py-2 px-4 text-white hover:bg-slate-950 hover:border-slate-600 transition duration-500"
                       >
                         Submit
                       </button>
@@ -851,6 +893,55 @@
       <!-- end container-->
     </div>
     <!--end mount body-->
+
+    <footer
+      class="p-4 bg-white md:px-6 md:py-8 border border-slate-300 border-solid relative z-50"
+    >
+      <div
+        class="sm:flex sm:items-center sm:justify-between border-b border-b-slate-300 pb-7"
+      >
+        <a href="#" target="_blank" class="flex items-center mb-4 sm:mb-0">
+          <img
+            src="https://flowbite.com/docs/images/logo.svg"
+            class="mr-4 h-8"
+            alt="Flowbite Logo"
+          />
+          <span class="self-center text-xl font-semibold whitespace-nowrap"
+            >MountAviary</span
+          >
+        </a>
+        <div class="uppercase font-poppins font-bold text-sm text-slate-500">
+          <ul class="flex flex-wrap items-center mb-6 sm:mb-0">
+            <li class="mr-4 md:mr-6 hover:text-slate-800 active:text-slate-800">
+              <a href="#home">Home</a>
+            </li>
+            <li class="mr-4 md:mr-6 hover:text-slate-800 active:text-slate-800">
+              <a href="#about">About Me</a>
+            </li>
+            <li class="mr-4 md:mr-6 hover:text-slate-800 active:text-slate-800">
+              <a href="#service">What I Do</a>
+            </li>
+            <li class="mr-4 md:mr-6 hover:text-slate-800 active:text-slate-800">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="mr-4 md:mr-6 hover:text-slate-800 active:text-slate-800">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <span
+        class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 pt-7"
+        >© 2024
+        <a
+          href="https://mountaviary.com"
+          target="_blank"
+          class="hover:text-slate-950"
+          >MountAviary</a
+        >. All Rights Reserved.
+      </span>
+    </footer>
 
     <script src="src/scripts.js"></script>
   </body>
