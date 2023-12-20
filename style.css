@@ -51,6 +51,10 @@ body {
 .navbar ul.show {
   display: block !important;
   transition: all .5s;
+  position: fixed;
+  right: 44px;
+  top: 45px;
+  z-index: 999;
 }
 
 
