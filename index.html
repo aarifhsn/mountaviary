@@ -32,9 +32,11 @@
             ></span>
           </div>
           <ul
-            class="nav-list text-right hidden p-6 pr-2 border border-slate-200"
+            class="nav-list text-right hidden p-6 pr-2 border border-slate-200 text-slate-700"
           >
-            <li class="mb-5 hover:text-slate-500"><a href="#home">Home</a></li>
+            <li class="mb-5 hover:text-slate-500">
+              <a href="#home">Home</a>
+            </li>
             <li class="mb-5 hover:text-slate-500">
               <a href="#about">About</a>
             </li>
@@ -65,13 +67,13 @@
               <div class="person_info">
                 <div class="persons_photo flex items-center justify-center">
                   <img
-                    class="rounded border-1 border-slate-300 h-40 w-48"
+                    class="rounded border-1 border-slate-300 h-auto w-48"
                     src="img/profile.webp"
                     alt=""
                   />
                 </div>
                 <h3
-                  class="person_name text-left xl:text-center text-2xl font-bold my-4 font-poppins"
+                  class="person_name text-left xl:text-center text-xl text-slate-700 hover:text-slate-900 font-bold my-4 font-poppins"
                 >
                   <a href="#"
                     >Mount<span class="text-slate-500">A</span>viary</a
@@ -84,20 +86,24 @@
                 class="left_nav text-left uppercase font-poppins font-bold text-sm text-slate-500 mt-8 pl-0 xl:pl-10"
               >
                 <ul>
-                  <li class="mt-4 hover:text-slate-800 active:text-slate-800">
-                    <a href="#home">Home</a>
+                  <li class="mt-4">
+                    <a class="hover:text-slate-800" href="#home">Home</a>
                   </li>
-                  <li class="mt-4 hover:text-slate-800 active:text-slate-800">
-                    <a href="#about">About Me</a>
+                  <li class="mt-4">
+                    <a class="hover:text-slate-800" href="#about">About Me</a>
                   </li>
-                  <li class="mt-4 hover:text-slate-800 active:text-slate-800">
-                    <a href="#service">What I Do</a>
+                  <li class="mt-4">
+                    <a class="hover:text-slate-800" href="#service"
+                      >What I Do</a
+                    >
                   </li>
-                  <li class="mt-4 hover:text-slate-800 active:text-slate-800">
-                    <a href="#portfolio">Portfolio</a>
+                  <li class="mt-4">
+                    <a class="hover:text-slate-800" href="#portfolio"
+                      >Portfolio</a
+                    >
                   </li>
-                  <li class="mt-4 hover:text-slate-800 active:text-slate-800">
-                    <a href="#contact">Contact</a>
+                  <li class="mt-4">
+                    <a class="hover:text-slate-800" href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -115,7 +121,7 @@
             >
               <div class="devs_top_content">
                 <h2
-                  class="text-3xl md:text-5xl 2xl:text-8xl text-slate-950 font-extrabold capitalize"
+                  class="text-3xl md:text-5xl 2xl:text-8xl text-slate-700 font-extrabold capitalize"
                 >
                   <span
                     class="font-extrabold text-slate-200 absolute -mt-2 md:-mt-6 2xl:-mt-14 left-0 lg:left-10 md:left-0"
@@ -217,10 +223,14 @@
                 />
               </div>
               <div class="about_info my-4">
-                <h3 class="font-bold text-xl sm:text-2xl my-2">
+                <h3
+                  class="font-bold text-xl sm:text-2xl text-slate-700 hover:text-slate-900 my-2 font-poppins uppercase"
+                >
                   <a href="">Arif Hassan</a>
                 </h3>
-                <p class="designation text-sm text-slate-500">Web Developer</p>
+                <p class="designation text-sm text-slate-500 font-semibold">
+                  Web Developer
+                </p>
 
                 <div
                   class="about_content my-4 md:my-6 py-3 md:py-7 border-t-2 border-slate-300"
@@ -669,7 +679,7 @@
                       alt=""
                     />
                     <h4
-                      class="author_name text-slate-500 hover:text-slate-900 mx-3 text-xs"
+                      class="author_name text-slate-500 hover:text-slate-900 mx-3 text-xs font-bold"
                     >
                       <a href="#">Arif Hassan</a>
                     </h4>
@@ -706,7 +716,7 @@
                       alt=""
                     />
                     <h4
-                      class="author_name text-slate-500 hover:text-slate-900 mx-3 text-xs"
+                      class="author_name text-slate-500 hover:text-slate-900 mx-3 text-xs font-bold"
                     >
                       <a href="">Arif Hassan</a>
                     </h4>
@@ -743,7 +753,7 @@
                       alt=""
                     />
                     <h4
-                      class="author_name text-slate-500 hover:text-slate-900 mx-3 text-xs"
+                      class="author_name text-slate-500 hover:text-slate-900 mx-3 text-xs font-bold"
                     >
                       <a href="">Arif Hassan</a>
                     </h4>
@@ -781,7 +791,7 @@
                         alt=""
                     /></a>
                     <h4
-                      class="author_name text-slate-500 hover:text-slate-900 mx-3 text-xs"
+                      class="author_name text-slate-500 hover:text-slate-900 mx-3 text-xs font-bold"
                     >
                       <a href="">Arif Hassan</a>
                     </h4>
@@ -925,32 +935,32 @@
       <div
         class="sm:flex sm:items-center justify-center sm:justify-between border-b border-b-slate-300 pb-4 md:pb-7"
       >
-        <a href="#" target="_blank" class="flex items-center mb-4 sm:mb-0">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            class="mr-4 h-8"
-            alt="Flowbite Logo"
-          />
-          <span class="self-center text-xl font-semibold whitespace-nowrap"
-            >MountAviary</span
+        <a
+          href="#"
+          target="_blank"
+          class="flex items-center mb-4 sm:mb-0 font-kanit uppercase"
+        >
+          <span class="self-center text-lg font-semibold whitespace-nowrap"
+            >Mount<span class="text-red-900">Aviary</span></span
           >
         </a>
+
         <div class="uppercase font-poppins font-bold text-sm text-slate-500">
           <ul class="flex flex-wrap items-center">
-            <li class="mr-4 md:mr-6 hover:text-slate-800 active:text-slate-800">
-              <a href="#home">Home</a>
+            <li class="mr-4 md:mr-6">
+              <a class="hover:text-slate-800" href="#home">Home</a>
             </li>
-            <li class="mr-4 md:mr-6 hover:text-slate-800 active:text-slate-800">
-              <a href="#about">About Me</a>
+            <li class="mr-4 md:mr-6">
+              <a class="hover:text-slate-800" href="#about">About Me</a>
             </li>
-            <li class="mr-4 md:mr-6 hover:text-slate-800 active:text-slate-800">
-              <a href="#service">What I Do</a>
+            <li class="mr-4 md:mr-6">
+              <a class="hover:text-slate-800" href="#service">What I Do</a>
             </li>
-            <li class="mr-4 md:mr-6 hover:text-slate-800 active:text-slate-800">
-              <a href="#portfolio">Portfolio</a>
+            <li class="mr-4 md:mr-6">
+              <a class="hover:text-slate-800" href="#portfolio">Portfolio</a>
             </li>
-            <li class="mr-4 md:mr-6 hover:text-slate-800 active:text-slate-800">
-              <a href="#contact">Contact</a>
+            <li class="mr-4 md:mr-6">
+              <a class="hover:text-slate-800" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -962,7 +972,7 @@
         <a
           href="https://mountaviary.com"
           target="_blank"
-          class="hover:text-slate-950"
+          class="font-semibold hover:text-slate-950"
           >MountAviary</a
         >. All Rights Reserved.
       </span>
